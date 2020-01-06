@@ -1,4 +1,4 @@
-var querstions = [
+var questions = [
     {
         title: "Primitive data types in JS do NOT include:",
         options: ["String", "NULL", "Undefined", "Objects"],
@@ -23,4 +23,6 @@ var querstions = [
         options: ["<HTML> tag","Window", "Web-Server", "Document"],
         answer: "Window"
     }
-]
+];
+
+

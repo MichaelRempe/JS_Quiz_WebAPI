@@ -9,17 +9,22 @@
 <body>
     <div class="container">
         <header>
-            <h1>Ready to learn?</h1>
+            <!-- Container: Inital= Title, inGame = Timer -->
+            <h1 id="timer">Ready to learn?</h1>
         </header>
         <div class="card">
             <!-- Container: initial = intro, inGame = Questions -->
             <div class="card-info">
-                <p>This quiz will be multiple choice and timed. Answering questions quickly and correctly will result in a higher score. Take the quiz and naviage over to the highscores pages to see how you did aginst your friends!</p>
+                <p id="quest-area">This quiz will be multiple choice and timed. Answering questions quickly and correctly will result in a higher score. Take the quiz and naviage over to the highscores pages to see how you did aginst your friends!</p>
             </div>
             <!-- Container: inital = startButton & highscores, inGame = Options Field -->
             <div class="card-body">
-                <button id="start" class="button" type="submit">Start Quiz! </button>
-                <button id="navigate" class="button"> View Highscores </button>
+                <p id="option-area">
+                    <button id="start" class="button" type="submit">Start Quiz! </button>
+                    <button id="navigate" class="button"> View Highscores </button>
+                </p>
+                <!-- Container: Intial = Empty, inGame = Next Question  -->
+                <p id="game-control"></p>
             </div>
         </div>
     </div>
