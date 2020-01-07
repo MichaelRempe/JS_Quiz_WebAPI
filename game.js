@@ -62,7 +62,7 @@ startBTN.addEventListener("click", function(event){
     quest_dsply.innerHTML="";
     option_dsply.innerHTML="";
 
-// Next we loop to add Questions + options to page for max 15 seconds
+// Next we loop to add Questions
 
     //ADD Questions to DOM
     var question = document.createElement("H3");
@@ -71,35 +71,40 @@ startBTN.addEventListener("click", function(event){
 
     // Add Options to DOM
     var options = document.createElement("ol");
-    for(var i=0; i<questions[0].options.length; i++){
-        var option = document.createElement("input");
-        option.setAttribute("type","button");
-        option.setAttribute("value", questions[0].options[i]);
-        //Add Function to options
-        option.addEventListener('click', function(event){
-            event.preventDefault();
-            if(event.target.getAttribute("value") == questions[0].answer){
-                continue;
-            }
-            else if(event.target.getAttribute("value") != questions[0].answer){
-                    //take 15 seconds off timer
+    //loop through questions
+    for(var index=0; index<questions.length;){
+        //loop through options
+        for(var i=0; i<questions[index].options.length; i++){
+            var option = document.createElement("input");
+            option.setAttribute("type","button");
+            option.setAttribute("value", questions[index].options[i]);
+            //Add Function to options
+            option.addEventListener('click', function(event){
+                event.preventDefault();
+                if(event.target.getAttribute("value") == questions[index].answer){
+                    console.log("correct!");
                 }
-        })
-        options.appendChild(option);
-    }
-    option_dsply.appendChild(options);
-
-    // Add Next button to DOM
+                else if(event.target.getAttribute("value") != questions[index].answer){
+                        console.log("incorrect!")
+                        //take 15 seconds off timer
+                    }
+            })
+            options.appendChild(option);
+        }
+        option_dsply.appendChild(options);
     
-    var nextBTN = document.createElement("input");
-    nextBTN.setAttribute("type", "button");
-    nextBTN.setAttribute("value", "Next");
-    nextBTN_dsply.appendChild(nextBTN);
-    // Function to Next Button
-    nextBTN.addEventListener('click', function(event){
-        event.preventDefault();
-        // i++
-    });
+        // Add Next button to DOM
+        var nextBTN = document.createElement("input");
+        nextBTN.setAttribute("type", "button");
+        nextBTN.setAttribute("value", "Next");
+        nextBTN_dsply.appendChild(nextBTN);
+        // Function to Next Button
+        nextBTN.addEventListener('click', function(event){
+            event.preventDefault();
+            index++;
+        });
+    }
+    //is loop done? if yes set boolean to true which calls timer function to reset display to end game
 });
 
 
