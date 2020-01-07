@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    
     <title>Web Development: JS Quiz</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <!-- Container: Inital= Title, inGame = Timer -->
-            <h1 id="timer">Ready to learn?</h1>
-        </header>
-        <div class="card">
-            <!-- Container: initial = intro, inGame = Questions -->
-            <div class="card-info">
-                <p id="quest-area">This quiz will be multiple choice and timed. Answering questions quickly and correctly will result in a higher score. Take the quiz and naviage over to the highscores pages to see how you did aginst your friends!</p>
-            </div>
-            <!-- Container: inital = startButton & highscores, inGame = Options Field -->
-            <div class="card-body">
-                <p id="option-area">
-                    <button id="start" class="button" type="submit">Start Quiz! </button>
-                    <button id="navigate" class="button"> View Highscores </button>
-                </p>
-                <!-- Container: Intial = Empty, inGame = Next Question  -->
-                <p id="game-control"></p>
+    <div class="wrapper">
+        <div class="container">
+            <header class="container-header">
+                <!-- Container: Inital= Title, inGame = Timer -->
+                <h1 id="timer">Ready to learn?</h1>
+            </header>
+            <div class="card">
+                <!-- Container: initial = intro, inGame = Questions -->
+                <div class="card-info">
+                    <p id="quest-area">This quiz will be multiple choice and timed. Answering questions quickly and
+                        correctly will result in a higher score. Take the quiz and navigate over to the highscores pages
+                        to see how you did aginst your friends!</p>
+                </div>
+                <!-- Container: inital = startButton & highscores, inGame = Options Field -->
+                <div class="card-body">
+                    <p id="option-area">
+                        <button id="start" class="button btn" type="submit">Start Quiz! </button>
+                        <button id="navigate" class="button btn"> View Highscores </button>
+                    </p>
+                    <!-- Container: Intial = Empty, inGame = Next Question  -->
+                    <p id="game-control"></p>
+                </div>
             </div>
         </div>
     </div>
 
+
     <script src="questions.js"></script>
     <script src="game.js"></script>
 </body>
+
 </html>
