@@ -7,10 +7,10 @@ https://michaelrempe.github.io/JS_Quiz_WebAPI/
 
 ### Screen Snips:
 Intial Page Load
-![alt text](https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/initial.PNG)
+![alt text](https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/inital.PNG)
 In-Game
 ![alt text](https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/inGame.PNG)
 Timer Ends
 ![alt text](https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/timesUP.PNG)
 User adds thier score to local storage
-![alt text]()https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/Highscore.PNG
+![alt text](https://github.com/MichaelRempe/JS_Quiz_WebAPI/blob/master/assets/scrn_sht/Highscore.PNG)
