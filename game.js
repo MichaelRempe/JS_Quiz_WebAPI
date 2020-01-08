@@ -97,23 +97,25 @@ var setTimer = function () {
             checkScoresBTN.setAttribute("type", "button");
             checkScoresBTN.setAttribute("value", "See Highscores");
             checkScoresBTN.setAttribute("class", "btn");
-            checkScoresBTN.addEventListener("click", function(event){
-                event.preventDefault();
+                checkScoresBTN.addEventListener("click", function (){
+                    event.preventDefault();
+                    display_highscore(event)});
+            //     event.preventDefault();
 
-                //set all containers to display nothing
-                quest_dsply.textContent = "";
-                option_dsply.innerHTML = "";
-                time_dsply.textContent = "";
-                //Set Time to highscore title
-                time_dsply.textContent = "HighScore";
+            //     //set all containers to display nothing
+            //     quest_dsply.textContent = "";
+            //     option_dsply.innerHTML = "";
+            //     time_dsply.textContent = "";
+            //     //Set Time to highscore title
+            //     time_dsply.textContent = "HighScore";
             
-                //Get locally stored score
-                var scoreSheet = JSON.parse(localStorage.getItem("currentHighScore"));
-                var name = scoreSheet.name;
-                var score = scoreSheet.score;
+            //     //Get locally stored score
+            //     var scoreSheet = JSON.parse(localStorage.getItem("currentHighScore"));
+            //     var name = scoreSheet.name;
+            //     var score = scoreSheet.score;
                 
-                quest_dsply.innerHTML = "<h4> Name: "+name+"</h4>"+"<h4> Score: "+score+"</h4>";
-            });
+            //     quest_dsply.innerHTML = "<h4> Name: "+name+"</h4>"+"<h4> Score: "+score+"</h4>";
+            // });
 
             // Add Buttons to DOM
             option_dsply.appendChild(initSUB);
@@ -176,8 +178,13 @@ startBTN.addEventListener("click", function startGame(event) {
     displayQuestion();
 });
 
-highScoresBTN.addEventListener("click", function display_highscore(event) {
+highScoresBTN.addEventListener("click", function(){
     event.preventDefault();
+    display_highscore(event)
+});
+
+function display_highscore(event){
+    
 
     //set all containers to display nothing
     quest_dsply.textContent = "";
@@ -194,4 +201,4 @@ highScoresBTN.addEventListener("click", function display_highscore(event) {
     quest_dsply.innerHTML = "<h4> Name: "+name+"</h4>"+"<h4> Score: "+score+"</h4>";
 
     //add button to launch game from
-});
+};
