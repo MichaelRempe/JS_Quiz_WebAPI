@@ -42,21 +42,19 @@ body {
     border: none;
     background-color: hsl(360, 91%, 36%);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-      0px;
-    color: hsl(0, 0%, 100%);
+    color: white;
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
+    margin: 1% 0%;
+    padding:10px;
     text-align: center;
     cursor: pointer;
   }
 /* option buttons */
 .btn2 {
     border: none;
-    background-color: hsl(360, 91%, 36%);
+    background-color: rgb(52, 4, 139);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
       0px;
@@ -64,25 +62,22 @@ body {
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
+    margin: 1% 0%;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
   }
-  /* next button */
-  .btn3 {
-    border: none;
-    background-color: hsl(360, 91%, 36%);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-      0px;
-    color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
+  #option-area{
+    background-color: hsl(206, 19%, 78%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     text-align: center;
-    cursor: pointer;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
   }
-/* created div for options + questions */
+  .option-list{
+      list-style: none;
+      padding: 0;
+  }
