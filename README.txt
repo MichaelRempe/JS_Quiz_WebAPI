@@ -1,1 +1,0 @@
-Testing my own knowledge of APIs and dynamic DOM manipulation through gameplay. In this case a siple quiz testing user knowledge on vinilla JavaScript
