@@ -10,7 +10,11 @@ var highscores = {
     score: 0,
 }
 // i need this object to be gloab to interact withit throughout script, initially adding it then overwirtes it on page reload pls doc me points for sucking at coding and be lzy and not fixing it or spelling lazy right a few words ago (its 2 am im going to bed)
-window.localStorage.setItem("currentHighScore", JSON.stringify(highscores));
+var exists = JSON.parse(window.localStorage.getItem("currentHighScore"));
+if(exists.name == "none"){
+    window.localStorage.setItem("currentHighScore", JSON.stringify(highscores));
+}
+
 
 // Inital/Functional Buttons
 var startBTN = document.getElementById("start");
